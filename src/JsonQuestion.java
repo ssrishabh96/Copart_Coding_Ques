@@ -8,7 +8,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 /*
-Email: Chakrapani.thadiboyina@copart.com
 
 Here are the coding exercises. Read the provided JSON into your JAVA program and
 
@@ -192,7 +191,7 @@ public class JsonQuestion{
                     seller = name;
                 }
          }
-        System.out.println("Seller: " +seller+" has +"+max +"vehicle lots:");
+        System.out.println("Seller: " +seller+" has "+max +"vehicle lots:");
 
 
     }

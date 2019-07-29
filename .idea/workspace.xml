@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="923fbe07-36a8-476e-9ee8-3386f811e120" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JSONInterview.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/json-20140107.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JSONInterview/JsonQuestion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JSONInterview/Lots$Parties.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JSONInterview/Lots.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/JSONInterview/input.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JsonQuestion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JSONInterview/JsonQuestion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JSONInterview/JsonQuestion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/JsonQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JsonQuestion.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,19 +18,41 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/JsonQuestion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+            <state relative-caret-position="570">
+              <caret line="194" column="52" selection-start-line="194" selection-start-column="52" selection-end-line="194" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#main#0;class#Js#0" />
-                <element signature="e#1709#2057#0" />
+                <element signature="method#main#0;class#JsonQuestion#0" />
                 <element signature="method#sortByProfitAndPrint#0;class#JsonQuestion#0" />
                 <element signature="method#populateList#0;class#JsonQuestion#0" />
-                <element signature="method#printInfo#0;class#JsonQuestion#0" />
-                <element signature="e#3607#3834#1" />
+                <element signature="method#printLotInfo#0;class#JsonQuestion#0" />
                 <element signature="method#printLot#0;class#JsonQuestion#0" />
-                <element signature="method#findSellerHighLots#0;class#JsonQuestion#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lots.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+              <folding>
+                <element signature="method#setLotNumber#0;class#Lots#0" />
+                <element signature="method#setcountry#0;class#Lots#0" />
+                <element signature="method#setPurchasePrice#0;class#Lots#0" />
+                <element signature="method#getTax#0;class#Lots#0" />
+                <element signature="class#Parties#0;class#Lots#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/input.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -78,6 +89,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,8 +107,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -103,7 +114,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564430907795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564434644986" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -143,21 +154,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="852" y="0" width="588" height="900" extended-state="6" />
+    <frame x="726" y="0" width="714" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Learn" weight="0.32894737" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25824177" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21279761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.32894737" />
+      <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.91927713" />
@@ -165,14 +172,18 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="XDebuggerManager">
@@ -188,40 +199,38 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/input.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lots.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="480">
+          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
           <folding>
             <element signature="method#setLotNumber#0;class#Lots#0" />
             <element signature="method#setcountry#0;class#Lots#0" />
             <element signature="method#setPurchasePrice#0;class#Lots#0" />
+            <element signature="method#getTax#0;class#Lots#0" />
             <element signature="class#Parties#0;class#Lots#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/JsonQuestion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="57" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
+        <state relative-caret-position="570">
+          <caret line="194" column="52" selection-start-line="194" selection-start-column="52" selection-end-line="194" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#main#0;class#Js#0" />
-            <element signature="e#1709#2057#0" />
+            <element signature="method#main#0;class#JsonQuestion#0" />
             <element signature="method#sortByProfitAndPrint#0;class#JsonQuestion#0" />
             <element signature="method#populateList#0;class#JsonQuestion#0" />
-            <element signature="method#printInfo#0;class#JsonQuestion#0" />
-            <element signature="e#3607#3834#1" />
+            <element signature="method#printLotInfo#0;class#JsonQuestion#0" />
             <element signature="method#printLot#0;class#JsonQuestion#0" />
-            <element signature="method#findSellerHighLots#0;class#JsonQuestion#0" />
           </folding>
         </state>
       </provider>
