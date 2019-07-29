@@ -1,6 +1,73 @@
 
+# Data Structure Used:
+Map where key is the lotNumber and the value is the POJO class Lots.java, implemented as:
+```java
+	private static Map<Integer, Lots> dataItems= new HashMap<>();
+```
+
+#### JSONArray Data Format:
+```javascript
+    "lotNumber" : "500671",
+    "country" : "DEU",
+    "party" : [{
+      "partyType" : "SLR",
+      "partyId" : 100
+    },
+      {
+        "partyType" : "MBR",
+        "partyId" : 700
+      }],
+    "purchasePrice" : 100000,
+    "salePrice" : 15000
+```  
+#### POJO class Lots.java:
+
+Class member variables:
+```java
+private int lotNumber;
+private String country;
+private ArrayList<Parties> party=new ArrayList<>();
+private double purchasePrice;
+private double salePrice;
+
+... Usual getter and setter methods
+... Inner Pojo Class: Parties with th following class members:
+... public class Parties{
+        private String partyType="";//  : "SLR",
+        private int parytID;
+	... usual getter and setter methods.
+```
+
+# METHODS:
+
+```java
+private static void populateList(JSONObject lot)
+
+```
+
+```java
+private static void sortByProfitAndPrint()
+```
+
+```java
+private static void printLotInfo(int lotNumber)
+calls the method: printLot(Lots temp)
+```
+
+```java
+private static void findSellerHighLots()
 
 
+```
+
+```java
+```
+
+```java
+```
+
+
+# OUTPUT
 Following is the Terminal output for the program:
 
 
