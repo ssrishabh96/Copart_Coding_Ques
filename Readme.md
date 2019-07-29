@@ -41,35 +41,63 @@ private double salePrice;
 # METHODS:
 
 ```java
+JSONParser jsonParser = new JSONParser();
+
+try (FileReader reader = new FileReader("src/input.json")){
+	//Read JSON file
+        Object obj = jsonParser.parse(reader);
+	// Typecast the object as the JSONArray
+        JSONArray parties = (JSONArray) obj;
+        //Iterate over employee array using Lambda
+        parties.forEach( emp -> populateList( (JSONObject) emp ) );
+}
+```
+-> Reading the json file and for each item in the JSONArray call the method populateList(JSONObject object) passing in the current JSONObject as the parameter.
+
+
+```java
 private static void populateList(JSONObject lot)
 
 ```
+->This method receives the JSONObject and we start by extracting each of the attributes for the current element and being pushing the data to the POJO object temp. Using POJO class setter method to set the attributes.
+
 
 ```java
 private static void sortByProfitAndPrint()
+
+// Using Java Collections to sort the ArrayList of the items.
+
+Collections.sort(lotsList);
+
+// This requires that the POJO class implements the Comparable interface 
+// and implement the compareTo() method as follows:
+    @Override
+    public int compareTo(Object object) {
+        double compareProfit=((Lots) object).getProfit();
+        return (int) (this.getProfit()-compareProfit);
+    }
 ```
+-> This method sorts the list of lots as per the profit earned in ascending order. The profit is calculated by (salePrice - purchasePrice).
 
 ```java
 private static void printLotInfo(int lotNumber)
-calls the method: printLot(Lots temp)
+// First it check if the map has the key. If it does, it calls the method pasing in hte key: as
+ printLot(Lots temp)
+ Else, it prints appropriate error message in the console.
 ```
 
 ```java
 private static void findSellerHighLots()
-
+// This method computes the seller thathas the highest numebr of lots.
+   In this, it is assumed that a seller is identified by the partyName attribute.
+   Idea is to extract a List of all the lots we have. And then, create a map of as follows:
+   Map<String, Integer> count=new HashMap<>();
+   where key is the seller name and value is the integer count of the lots they have.
 
 ```
-
-```java
-```
-
-```java
-```
-
 
 # OUTPUT
 Following is the Terminal output for the program:
-
 
 ```java
 /Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=59880:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Users/rishabh/Documents/JSONInterview/out/production/JSONInterview:/Users/rishabh/Library/Mobile Documents/com~apple~CloudDocs/Downloads/json-simple-1.1.1.jar" JsonQuestion
