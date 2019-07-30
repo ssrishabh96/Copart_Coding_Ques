@@ -40,6 +40,7 @@ private double salePrice;
 
 # METHODS:
 
+-> Reading the json file and for each item in the JSONArray call the method populateList(JSONObject object) passing in the current JSONObject as the parameter.
 ```java
 JSONParser jsonParser = new JSONParser();
 
@@ -52,7 +53,7 @@ try (FileReader reader = new FileReader("src/input.json")){
         parties.forEach( emp -> populateList( (JSONObject) emp ) );
 }
 ```
--> Reading the json file and for each item in the JSONArray call the method populateList(JSONObject object) passing in the current JSONObject as the parameter.
+
 
 
 ```java
